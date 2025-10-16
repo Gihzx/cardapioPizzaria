@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio de Pizza</title>
   <link rel="stylesheet" href="../css/style.css">
+  
+ 
 </head>
 <body>
   <main class="model">
@@ -13,7 +15,7 @@
       <h2>Faça seu pedido</h2>
     </header>
 
-    <form action="" method="post">
+    <form action="" method="get">
 
       <!-- Dados do cliente -->
       <fieldset>
@@ -28,27 +30,27 @@
       <!-- Tamanho -->
       <fieldset>
         <legend>Escolha o Tamanho da Pizza</legend>
-        <label><input type="radio" name="tamanho" value="pequena"> Pequena</label>
-        <label><input type="radio" name="tamanho" value="media"> Média</label>
-        <label><input type="radio" name="tamanho" value="grande"> Grande</label>
-        <label><input type="radio" name="tamanho" value="familia"> Família</label>
+        <label><input type="radio" id="pequena" name="tamanho" value="pequena"> Pequena</label>
+        <label><input type="radio" id="media" name="tamanho" value="media"> Média</label>
+        <label><input type="radio" id="grande" name="tamanho" value="grande"> Grande</label>
+        <label><input type="radio" id="familia" name="tamanho" value="familia"> Família</label>
       </fieldset>
 
       <!-- Sabor -->
       <fieldset>
         <legend>Escolha o Sabor</legend>
-        <label><input type="radio" name="sabor" value="mussarela"> Mussarela</label>
-        <label><input type="radio" name="sabor" value="calabresa"> Calabresa</label>
-        <label><input type="radio" name="sabor" value="frango"> Frango</label>
-        <label><input type="radio" name="sabor" value="cartola"> Cartola</label>
+        <label><input type="radio" id="mussarela" name="sabor" value="mussarela"> Mussarela</label>
+        <label><input type="radio" id="calabresa" name="sabor" value="calabresa"> Calabresa</label>
+        <label><input type="radio" id="frango" name="sabor" value="frango"> Frango</label>
+        <label><input type="radio" id="cartola" name="sabor" value="cartola"> Cartola</label>
       </fieldset>
 
       <!-- Borda -->
       <fieldset>
         <legend>Borda Recheada</legend>
-        <label><input type="checkbox" name="borda" value="catupiry"> Catupiry</label>
-        <label><input type="checkbox" name="borda" value="cheddar"> Cheddar</label>
-        <label><input type="checkbox" name="borda" value="chocolate"> Chocolate</label>
+        <label><input type="checkbox" id="catupiry" name="borda" value="catupiry"> Catupiry</label>
+        <label><input type="checkbox" id="cheddar" name="borda" value="cheddar"> Cheddar</label>
+        <label><input type="checkbox" id="chocolate" name="borda" value="chocolate"> Chocolate</label>
       </fieldset>
 
       <!-- Observações -->
@@ -60,14 +62,17 @@
       <!-- Pagamento -->
       <fieldset>
         <legend>Forma de Pagamento</legend>
-        <label><input type="radio" name="pagamento" value="dinheiro"> Dinheiro</label>
-        <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
-        <label><input type="radio" name="pagamento" value="pix"> Pix</label>
+        <label><input type="radio" id="dinheiro" name="pagamento" value="dinheiro"> Dinheiro</label>
+        <label><input type="radio" id="cartao" name="pagamento" value="cartao"> Cartão</label>
+        <label><input type="radio" id="pix" name="pagamento" value="pix"> Pix</label>
       </fieldset>
 
       <!-- Botão -->
-      <button type="submit">Finalizar Pedido</button>
+      <button type="submit" id="send">Finalizar Pedido</button>
+
     </form>
   </main>
+  <script src="../js/script.js" defer>
+  </script>
 </body>
 </html>
